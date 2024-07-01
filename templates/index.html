@@ -1,0 +1,67 @@
+<html>
+    <head>
+    <title>
+        {{title}}
+    </title>
+    <style>
+        .main{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    hello everyone............
+    <br>
+    i am come back
+    <div class="main">
+        jhkjkj
+    </div>
+    {{body}}
+    {% for i in lists %}
+    <p>{{forloop.counter}} {{i}}</p>
+    {% endfor %}
+    <br>
+    <br>
+    <br>
+    <br>
+<table border="2" cellpadding="10px">
+    <tr>
+<th>
+    name
+</th>
+<th>
+    class
+</th>
+    </tr>
+
+
+
+    {% for i in dict %}
+<tr>
+    <td>
+        {{i.name}}
+    </td>
+    <td>
+        {{i.class}}
+    </td>
+</tr>
+
+    {%endfor%}
+</table>
+<br>
+<br>
+<br>
+<br>
+
+
+{% for j in pp %}
+    {% if j > 3 %}
+        <div>
+        {{j}}
+        </div>
+    {% endif %}
+{% endfor%}
+
+
+<body>
+</html>
